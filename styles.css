@@ -16,13 +16,15 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    gap: 16px;
+    display: flex;
 }
 li {
     margin-bottom: 16px;
 }
 a {
     color: #e5e7eb;
-    font-size: 18px;
+    font-size: 12px;
     text-decoration: none;
 }
 
@@ -30,6 +32,8 @@ h1 {
     font-size:48px ;
     font-weight: 900;
     color: #f9faf8;
+    padding-bottom: 0px;
+    margin: 0;
 }
 
 .container p {
@@ -42,11 +46,13 @@ button {
    color: white;
    border-radius: 8px;
    padding: 4px 8px;
+   border: none;
 }
 
 .add {
     background-color: #3882f6;
     color: #e5e7eb;
+    font-size: 20px;
 }
 
 .content {
@@ -71,7 +77,7 @@ button {
     color: #1f2937;
 }
 
-#author {
+.author {
     color: #1f2937;
     font-size: 18px;
     font-weight: bolder;
@@ -84,4 +90,114 @@ button {
 body {
     display: flex;
     flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around ;
+    padding: 4px 10px;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 150px;
+    padding-bottom: 80px;
+    gap: 50px;
+    flex: 1;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 600px;
+}
+
+.content {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.title {
+    padding-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card {
+    max-width: 275px;
+    flex-basis: 100%;
+}
+
+.content img {
+    border-radius: 4%;
+    border: #3882f6 solid 3px;
+}
+
+.quotes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 4px;
+}
+
+#quote {
+    display: flex;
+    max-width: 1200px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    /*border: #1f2937 solid;*/
+}
+/* made an overlap with height dimensios,
+idk if this is proper to do so*/
+
+.author {
+    margin-left: 1000px;
+    margin-top:0;
+    padding: 0;
+}
+
+.add {
+ display: flex;
+ height: 120px;
+ width: 1000px;
+ margin: auto;
+ margin-top: 60px;
+ margin-bottom: 60px;
+ border-radius: 8px;
+ justify-content: space-around;
+ align-items: center;
+}
+ .add button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid white 1px;
+    border-radius: 8px;
+    padding: 4px 14px;
+    margin: 46px 0;
+ }
+ 
+ h4 {
+    margin-bottom: 0;
+ }
+
+ .add p {
+    margin-top: 0;
+ }
+
+ .footer {
+    display: flex;
+   height: 60px;
+   justify-content: center;
+   align-items: center;
 }
